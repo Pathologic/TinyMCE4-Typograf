@@ -14,9 +14,7 @@ tinymce.PluginManager.add('typograf', function (editor, url) {
 
     scriptLoader.loadQueue(function () {
         tp = new Typograf(editor.settings.typograf || {
-            enableRule:"ru/optalign/*",
-            locale:["ru","en-US"],
-            htmlEntity:{type:"digit"}
+            locale:["ru","en-US"]
         });
         console.log(editor.settings)
     });
