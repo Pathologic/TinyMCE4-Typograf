@@ -16,7 +16,6 @@ tinymce.PluginManager.add('typograf', function (editor, url) {
         tp = new Typograf(editor.settings.typograf || {
             locale:["ru","en-US"]
         });
-        console.log(editor.settings)
     });
 
     editor.addButton('typograf', {
